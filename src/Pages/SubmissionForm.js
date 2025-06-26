@@ -770,7 +770,7 @@ const SubmissionForm = () => {
                 <div className="col-lg-6 pl-md-4 pl-0 col-xs-12 mb-2 my-auto">
                   <div className="mb-3">
                     <Reaptcha
-                      sitekey="6LcbTeMaAAAAACgLmm78gE8I_wr-ToH3G0U-6ooE"
+                      sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
                       onVerify={() => setOnVerify(true)}
                     />
                   </div>
