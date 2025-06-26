@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { getStates, getCities } from "../CRUD/locations.crud";
 import { createProfile } from "../CRUD/talentboard.crud";
-import Reaptcha from "reaptcha";
+// import Reaptcha from "reaptcha";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import CreatableSelect from "react-select/creatable";
@@ -36,7 +36,7 @@ const SubmissionForm = () => {
   const [relocationPossibility, setRelocationPossibility] = useState(false);
   const [profileExpiresIn, setProfileExpiresIn] = useState("2");
   const [acceptTnc, setAcceptTnc] = useState(true);
-  const [onVerify, setOnVerify] = useState(false);
+  // const [onVerify, setOnVerify] = useState(false);
   const [loading, setLoading] = useState(false);
   const [modalStatus, setModalStatus] = useState(false);
   let [errors, setErrors] = useState({});
@@ -767,14 +767,14 @@ const SubmissionForm = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 pl-md-4 pl-0 col-xs-12 mb-2 my-auto">
-                  {/* <div className="mb-3">
+                {/* <div className="col-lg-6 pl-md-4 pl-0 col-xs-12 mb-2 my-auto">
+                  <div className="mb-3">
                     <Reaptcha
                       sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
                       onVerify={() => setOnVerify(true)}
                     />
-                  </div> */}
-                </div>
+                  </div>
+                </div> */}
                 <div className="col-lg-9 col-xs-12 mb-2">
                   <div className="form-check mb-3">
                     <input
@@ -805,10 +805,9 @@ const SubmissionForm = () => {
                   <button
                     className="btn btn-primary text-white w-75  border-20"
                     onClick={(e) => submitResponse(e)}
-                    disabled={!acceptTnc || loading || !onVerify}
+                    disabled={!acceptTnc || loading}
                   >
-                    {" "}
-                    Submit{" "}
+                    Submit
                   </button>
                 </div>
               </div>
