@@ -7,7 +7,7 @@ This is a modern **Job Board** web application built using **React.js**. It enab
 
 ## 🚀 Live Demo
 
-> Coming Soon / [Deploy on Vercel](https://vercel.com/)
+https://job-board-react-pi.vercel.app/
 
 ---
 
@@ -115,9 +115,9 @@ serverless deploy
 
 ## 📸 Screenshot
 
-![Job Board UI](./assets/job-board-screenshot.png)
+![landing page](https://github.com/user-attachments/assets/ffb06adb-5e29-42e8-a049-ac5da5c8acdf)
 
-> Make sure `assets/job-board-screenshot.png` exists in your project or replace with valid URL
+![Add profile page](https://github.com/user-attachments/assets/912eb204-16f5-4aad-b2ac-170b1d0a035a)
 
 ---
 
