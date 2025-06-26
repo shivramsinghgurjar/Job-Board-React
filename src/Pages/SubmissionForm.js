@@ -768,12 +768,12 @@ const SubmissionForm = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 pl-md-4 pl-0 col-xs-12 mb-2 my-auto">
-                  <div className="mb-3">
+                  {/* <div className="mb-3">
                     <Reaptcha
                       sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
                       onVerify={() => setOnVerify(true)}
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-lg-9 col-xs-12 mb-2">
                   <div className="form-check mb-3">
